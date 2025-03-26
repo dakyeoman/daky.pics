@@ -1,68 +1,73 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NQKKBVF793"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<head>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-NQKKBVF793"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
 
-  gtag('config', 'G-NQKKBVF793');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>다키스냅</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard/dist/web/variable/pretendardvariable.css">
-    <style>
-        body {
-            font-family: 'Pretendard Variable', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            color: #333;
-            overflow-x: hidden;
-            text-align: left;
-        }
-        .container {
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-            /* scroll-snap-type: y mandatory; */
-            overflow-y: scroll;
-            text-align: left;
-            /* height: 100vh; */
-        }
-        .container {
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-            /* scroll-snap-type: y mandatory; */
-            /* overflow-y: auto; */
-            overflow-y: scroll;
-            overflow-x: hidden;
-            scroll-behavior: smooth;
+			gtag('config', 'G-NQKKBVF793');
+		</script>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>다키스냅</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/pretendard/dist/web/variable/pretendardvariable.css"
+		/>
+		<style>
+			body {
+				font-family: 'Pretendard Variable', sans-serif;
+				margin: 0;
+				padding: 0;
+				background-color: #ffffff;
+				color: #333;
+				overflow-x: hidden;
+				text-align: left;
+			}
+			.container {
+				width: 100vw;
+				display: flex;
+				flex-direction: column;
+				/* scroll-snap-type: y mandatory; */
+				overflow-y: scroll;
+				text-align: left;
+				/* height: 100vh; */
+			}
+			.container {
+				width: 100vw;
+				display: flex;
+				flex-direction: column;
+				/* scroll-snap-type: y mandatory; */
+				/* overflow-y: auto; */
+				overflow-y: scroll;
+				overflow-x: hidden;
+				scroll-behavior: smooth;
 
-            /* scroll-behavior: auto; */
-            text-align: left;
-        }
-        .section {
-            width: 100%;      
-            min-height: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            text-align: left;
-            scroll-snap-align: start;
-            padding: 20px;
-            overflow-x: hidden;
-            overflow-y: scroll;
-            box-sizing: border-box;
-            /* overflow-y: auto; */
-            /* scroll-behavior: auto; */
-        }
-        /* .header-section {
+				/* scroll-behavior: auto; */
+				text-align: left;
+			}
+			.section {
+				width: 100%;
+				min-height: auto;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: center;
+				text-align: left;
+				scroll-snap-align: start;
+				padding: 20px;
+				overflow-x: hidden;
+				overflow-y: scroll;
+				box-sizing: border-box;
+				/* overflow-y: auto; */
+				/* scroll-behavior: auto; */
+			}
+			/* .header-section {
             width: 100vw;
             height: 100vh;
             display: flex;
@@ -71,81 +76,81 @@
             justify-content: center;
             background: url('your-header-image-url.jpg') no-repeat center center/cover;
         } */
-        .header-title {
-            /* background: rgba(0, 0, 0, 0.5); */
-            padding: 10px;
-            border-radius: 4px;
-            color: white;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .profile-section {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            /* background-color: #f8f8f8; */
-            padding: 10px;
-            border-radius: 4px;
-            width: 10%;
-            overflow-x: hidden;
-            margin: auto;
-        }
-        .profile-img {
-            height: 400px;
-            border-radius: 4px;
-            margin-right: 15px;
-        }
-        .profile-text {
-            flex: 1;
-        }
-        .box {
-            background-color: #ffffff;
-            border: 1px solid #b4b4b4;
-            padding: 15px;
-            border-radius: 4px;
-            width: 85%;
-            max-width: 600px;
-            margin: 10px;
-            text-align: left;
-            font-size: 14px;
-        }
-        .header-section {
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background: url('your-header-image-url.jpg') no-repeat center center/cover;
-            padding: 0; /* 패딩 제거 */
-            margin: 0;  /* 마진 제거 */
-        }
-        .header-image {
-            width: 100vw; /* 뷰포트 전체 너비 */
-            height: 100vh; /* 뷰포트 전체 높이 */
-            object-fit: cover; /* 이미지가 꽉 차도록 조정 */
-            display: block; /* 이미지 상단 공백 방지 */
-        }
-        h2 {
-            text-align: left;
-            width: 100%;
-            font-size: 20px;
-        }
-        .image-scroll-container {
-            width: 100%;
-            overflow-x: auto;
-            white-space: nowrap;
-            display: flex;
-            gap: 10px;
-            padding: 10px 0;
-            scroll-behavior: smooth;
-        }
-        .image-scroll-container img {
-            height: 250px; /* 이미지 크기 조정 (이전보다 작게) */
-            border-radius: 4px;
-            object-fit: cover;
-        }
-        /* .toggle-container {
+			.header-title {
+				/* background: rgba(0, 0, 0, 0.5); */
+				padding: 10px;
+				border-radius: 4px;
+				color: white;
+				font-size: 24px;
+				font-weight: bold;
+			}
+			.profile-section {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				/* background-color: #f8f8f8; */
+				padding: 10px;
+				border-radius: 4px;
+				width: 10%;
+				overflow-x: hidden;
+				margin: auto;
+			}
+			.profile-img {
+				height: 400px;
+				border-radius: 4px;
+				margin-right: 15px;
+			}
+			.profile-text {
+				flex: 1;
+			}
+			.box {
+				background-color: #ffffff;
+				border: 1px solid #b4b4b4;
+				padding: 15px;
+				border-radius: 4px;
+				width: 85%;
+				max-width: 600px;
+				margin: 10px;
+				text-align: left;
+				font-size: 14px;
+			}
+			.header-section {
+				width: 100vw;
+				height: 100vh;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				background: url('your-header-image-url.jpg') no-repeat center center/cover;
+				padding: 0; /* 패딩 제거 */
+				margin: 0; /* 마진 제거 */
+			}
+			.header-image {
+				width: 100vw; /* 뷰포트 전체 너비 */
+				height: 100vh; /* 뷰포트 전체 높이 */
+				object-fit: cover; /* 이미지가 꽉 차도록 조정 */
+				display: block; /* 이미지 상단 공백 방지 */
+			}
+			h2 {
+				text-align: left;
+				width: 100%;
+				font-size: 20px;
+			}
+			.image-scroll-container {
+				width: 100%;
+				overflow-x: auto;
+				white-space: nowrap;
+				display: flex;
+				gap: 10px;
+				padding: 10px 0;
+				scroll-behavior: smooth;
+			}
+			.image-scroll-container img {
+				height: 250px; /* 이미지 크기 조정 (이전보다 작게) */
+				border-radius: 4px;
+				object-fit: cover;
+			}
+			/* .toggle-container {
             margin-top: 10px;
             
         }
@@ -167,216 +172,272 @@
         .open .toggle-title span {
             transform: rotate(90deg);
         } */
-        .copy-container {
-            background: #ffffff;
-            padding: 15px;
-            border-radius: 4px;
-            font-size: 14px;
-            border:1px solid #b4b4b4;;
-            width: 85%;
-            max-width: 600px;
-            text-align: left;
-            position: relative;
-            margin: 10px;
-            text-align: left;
-            font-size: 14px;
-        }
-        .copy-button {
-            background: #4CAF50;
-            color: white;
-            border: none;
-            margin-top: 20px;
-            margin-right: 20px;
-            padding: 5px 10px;
-            border-radius: 4px;
-            cursor: pointer;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            font-size: 12px;
-        }
-        .copy-button:hover {
-            background: #45a049;
-        }
-        p {
-            line-height: 1.8; /* 문단 줄 간격 증가 */
-        }
-        a {
-            font-weight: bold;
-            color: #499956;
-            text-decoration: none;
-        }
-        .lang-toggle {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: transparent;
-            border: 1px solid #ffffff;
-            color: white;
-            border: none;
-            padding: 8px 16px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 14px;
-        }
-        /* .lang-toggle:hover {
+			.copy-container {
+				background: #ffffff;
+				padding: 15px;
+				border-radius: 4px;
+				font-size: 14px;
+				border: 1px solid #b4b4b4;
+				width: 85%;
+				max-width: 600px;
+				text-align: left;
+				position: relative;
+				margin: 10px;
+				text-align: left;
+				font-size: 14px;
+			}
+			.copy-button {
+				background: #4caf50;
+				color: white;
+				border: none;
+				margin-top: 20px;
+				margin-right: 20px;
+				padding: 5px 10px;
+				border-radius: 4px;
+				cursor: pointer;
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				font-size: 12px;
+			}
+			.copy-button:hover {
+				background: #45a049;
+			}
+			p {
+				line-height: 1.8; /* 문단 줄 간격 증가 */
+			}
+			a {
+				font-weight: bold;
+				color: #499956;
+				text-decoration: none;
+			}
+			.lang-toggle {
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				background: transparent;
+				border: 1px solid #ffffff;
+				color: white;
+				border: none;
+				padding: 8px 16px;
+				border-radius: 4px;
+				cursor: pointer;
+				font-size: 14px;
+			}
+			/* .lang-toggle:hover {
             background: #555;
         } */
-    </style>
-</head>
-<body>
-    <button class="lang-toggle" onclick="toggleLanguage()">EN</button>
+		</style>
+	</head>
+	<body>
+		<button class="lang-toggle" onclick="toggleLanguage()">EN</button>
 
-    <div class="container">
-        <section class="section header-section" id="home">
-            <img src="header-image_optimized.jpeg" alt="Header Image" class="header-image">
-        </section>
-        
-        <section class="section" id="about" style="font-size: 14px">
-            <h2 style="font-size: 24px;">다키스냅 @daky_snap</h2>
-            <h2>부담 없이, 자연스럽게, 그리고 나답게</h2>
-            <p>다키스냅은 단순히 ‘예쁜 사진’보다 
-                <br><b>‘내가 나를 더 좋아할 수 있는 사진’</b> 을 중요하게 생각합니다.<br>
-                <br>사진을 남기는 과정 자체가 어색하지 않고 편안해야 
-                <br>사진 속 내 모습도 자연스럽게 담긴다고 믿어요.<br>
-                <br>촬영 전부터 결과물을 받는 순간까지
-                <br>부담 없이 즐길 수 있도록 도와드립니다.</p>
+		<div class="container">
+			<section class="section header-section" id="home">
+				<img src="header-image_optimized.jpeg" alt="Header Image" class="header-image" />
+			</section>
 
-            <p>다키스냅이 찍은 사진이 궁금하신가요? <br>
-                <strong><a href="https://www.instagram.com/daky_snap/" target="_blank">인스타그램 채널(@daky_snap) 바로가기</a></strong></p>
+			<section class="section" id="about" style="font-size: 14px">
+				<h2 style="font-size: 24px">다키스냅 @daky_snap</h2>
+				<h2>부담 없이, 자연스럽게, 그리고 나답게</h2>
+				<p>
+					다키스냅은 단순히 ‘예쁜 사진’보다 <br /><b>‘내가 나를 더 좋아할 수 있는 사진’</b> 을
+					중요하게 생각합니다.<br />
+					<br />사진을 남기는 과정 자체가 어색하지 않고 편안해야 <br />사진 속 내 모습도 자연스럽게
+					담긴다고 믿어요.<br />
+					<br />촬영 전부터 결과물을 받는 순간까지 <br />부담 없이 즐길 수 있도록 도와드립니다.
+				</p>
 
-            <!-- <div class="image-scroll-container">
+				<p>
+					다키스냅이 찍은 사진이 궁금하신가요? <br />
+					<strong
+						><a href="https://www.instagram.com/daky_snap/" target="_blank"
+							>인스타그램 채널(@daky_snap) 바로가기</a
+						></strong
+					>
+				</p>
+
+				<!-- <div class="image-scroll-container">
                 <img src="photo1.jpg" alt="Sample Photo 1">
                 <img src="photo2.jpg" alt="Sample Photo 2">
                 <img src="photo3.jpg" alt="Sample Photo 3">
                 <img src="photo4.jpg" alt="Sample Photo 4">
                 <img src="photo5.jpg" alt="Sample Photo 5">
             </div> -->
-        </section>
+			</section>
 
-        <section class="section" id="shooting-info">
-            <h2>촬영 안내</h2>
-            <div class="box">
-                <p><strong>촬영 전: 걱정은 두고 오세요!</strong></p>
-                <p style="font-size: 14px"><strong>Q. 어디서 찍어야 할지 모르겠어요:</strong><br>
-                    작가가 애정하는 서울 곳곳의 스팟이 있습니다! 예약 시 원하는 분위기를 말씀해주시면, 추구미와 맞는 장소로 안내해드릴게요 🥰</p>
-                <p style="font-size: 14px" ><strong>Q. 어떻게 찍어야 할지 모르겠어요:</strong><br>
-                촬영 전 대화를 나누며 원하시는 느낌을 함께 상의합니다. 막연히 '예쁘게 찍어주세요'라고 하셔도 괜찮아요. 갖고 계신 분위기에 맞는 빛, 구도, 포즈로 자연스럽게 이끌어드릴게요😊</p>
-                <p style="font-size: 14px">- 원하시는 사진 느낌과 장소가 결정되면, 작가가 촬영일의 동선플랜을 고민해 가져갈 거예요! 이는 촬영을 시작하기 전, 간략히 설명해 드립니다.</p>
-            </div>
+			<section class="section" id="shooting-info">
+				<h2>촬영 안내</h2>
+				<div class="box">
+					<p><strong>촬영 전: 걱정은 두고 오세요!</strong></p>
+					<p style="font-size: 14px">
+						<strong>Q. 어디서 찍어야 할지 모르겠어요:</strong><br />
+						작가가 애정하는 서울 곳곳의 스팟이 있습니다! 예약 시 원하는 분위기를 말씀해주시면,
+						추구미와 맞는 장소로 안내해드릴게요 🥰
+					</p>
+					<p style="font-size: 14px">
+						<strong>Q. 어떻게 찍어야 할지 모르겠어요:</strong><br />
+						촬영 전 대화를 나누며 원하시는 느낌을 함께 상의합니다. 막연히 '예쁘게 찍어주세요'라고
+						하셔도 괜찮아요. 갖고 계신 분위기에 맞는 빛, 구도, 포즈로 자연스럽게 이끌어드릴게요😊
+					</p>
+					<p style="font-size: 14px">
+						- 원하시는 사진 느낌과 장소가 결정되면, 작가가 촬영일의 동선플랜을 고민해 가져갈 거예요!
+						이는 촬영을 시작하기 전, 간략히 설명해 드립니다.
+					</p>
+				</div>
 
-            <div class="box">
-                <p><strong>촬영 중: 작가와 있는 그대로의 나를 믿을 수 있도록</strong></p>
-                <p>- 다키스냅이 가장 신경 쓰는 건, <b>고객이 자기 자신을 의심하지 않도록</b> 돕는 거예요. 사진이 어떻게 나오고 있는지는 솔직하게 설명해드리지만, 찍는 순간만큼은 '내가 괜찮은가?'라는 생각이 들지 않도록 분위기를 만들어가요.</p>
-                <p>- 포즈나 표정이 어색할까 걱정되신다면, 직접 시범을 보여드리면서 자연스럽게 따라 하실 수 있도록 도와드립니다.</p>
-                <p>- 촬영 중에는 ‘지금 너무 잘 나오고 있어요!’ 같은 피드백을 자주 드리는는데요! 그냥 하는 말이 아니라, 스스로를 더 편하게 표현하실 수 있도록 돕기 위해서입니다.</p>
-            </div>
-            <div class="box">
-                <p><strong>촬영 후: 사진을 보는 순간, 미소가 지어지도록</strong></p>
-                <p>- 사진을 받을 때 가장 중요한 건, 그 사진 속 내 모습이 마음에 드는 것이라고 생각합니다.</p>
-                <p>- 다키스냅은 빛과 분위기를 보완해 <b>내가 나를 더 좋아할 수 있는 사진</b>을 만들려고 해요. 모델분께서 원래 가지고 계신 분위기를 살려서, 오래오래 두고 볼 수 있는 사진을 만들어드릴게요.</p>
-            </div>
-            
-        </section>
-        
-        <section class="section" id="pricing">
-            <h2>가격 안내</h2>
-            <div class="box">
-                <p><strong>[개인스냅]<br>오로지 당신에게 집중하는 시간</strong></p>
-                <p>촬영 시간: 1시간</p>
-                <p>셀렉하신 원본 모두 제공</p>
-                <p>보정본 12장 제공</p>
-                <p style="color: green;">가격: 45,000원 [55% 할인 중]</p>
-                <p>프로필사진, 졸업스냅 등을 원하실 때 추천드려요.</p>
-            </div>
-            <div class="box">
-                <p><strong>[2인 스냅]<br>연인, 친구, 부모님과 함께</strong></p>
-                <p>촬영 시간: 1시간</p>
-                <p>셀렉하신 원본 모두 제공</p>
-                <p>보정본 15장 제공</p>
-                <p style="color: green;">가격: 65,000원 [55% 할인 중]</p>
-                <p>소중한 사람과 추억을 남기고 싶으실 때 추천드려요.</p>
-            </div>
-        
-            <div class="box">
-                <h2>추가 상품 안내</h2>
-                <p>3인 이상 촬영부터 인원추가비용이 발생합니다: <br> 1인 추가 시 + 20,000원</p>
-                <p>보정본 추가 장당: +5,000원</p>
-                <p>3일 이내 선보정 요청: +10,000원</p>
-                <p>시간 추가 시 30분 단위: +25,000원</p>
-            </div>
-        </section>
+				<div class="box">
+					<p><strong>촬영 중: 작가와 있는 그대로의 나를 믿을 수 있도록</strong></p>
+					<p>
+						- 다키스냅이 가장 신경 쓰는 건, <b>고객이 자기 자신을 의심하지 않도록</b> 돕는 거예요.
+						사진이 어떻게 나오고 있는지는 솔직하게 설명해드리지만, 찍는 순간만큼은 '내가
+						괜찮은가?'라는 생각이 들지 않도록 분위기를 만들어가요.
+					</p>
+					<p>
+						- 포즈나 표정이 어색할까 걱정되신다면, 직접 시범을 보여드리면서 자연스럽게 따라 하실 수
+						있도록 도와드립니다.
+					</p>
+					<p>
+						- 촬영 중에는 ‘지금 너무 잘 나오고 있어요!’ 같은 피드백을 자주 드리는는데요! 그냥 하는
+						말이 아니라, 스스로를 더 편하게 표현하실 수 있도록 돕기 위해서입니다.
+					</p>
+				</div>
+				<div class="box">
+					<p><strong>촬영 후: 사진을 보는 순간, 미소가 지어지도록</strong></p>
+					<p>
+						- 사진을 받을 때 가장 중요한 건, 그 사진 속 내 모습이 마음에 드는 것이라고 생각합니다.
+					</p>
+					<p>
+						- 다키스냅은 빛과 분위기를 보완해 <b>내가 나를 더 좋아할 수 있는 사진</b>을 만들려고
+						해요. 모델분께서 원래 가지고 계신 분위기를 살려서, 오래오래 두고 볼 수 있는 사진을
+						만들어드릴게요.
+					</p>
+				</div>
+			</section>
 
-        <section class="section" id="reservation">
-            <h2>예약 안내</h2>
-            <p style ="font-size: 14px;">아래 양식을 작성하셔서, <a href="https://www.instagram.com/daky_snap/" target="_blank">인스타그램(@daky_snap)</a> DM 또는 <a href="https://pf.kakao.com/_ymGnn" target="_blank">카카오톡 채널</a>로 메시지를 보내주세요!
-            <br>예약 전 <a href="https://dakyeomahn.notion.site/1b2db2103b2a809284b8d6f51ed7a815?v=1b2db2103b2a8062991a000c695a0f6b" target="_blank">다키스냅 스케줄</a>을 확인해주시면 감사하겠습니다.</p>
-            <div class="copy-container">
-                <button class="copy-button" onclick="copyReservationForm()">복사하기</button>
-                <p><strong>[예약 양식]</strong></p>
-                <p id="reservation-text">
-                성함:
-                
-                <br>연락처:
-                                
-                <br>희망 날짜 및 시간(가능하신 옵션 여러개):
-                                
-                <br>촬영 인원:
-                                
-                <br>마케팅 동의 여부 (O,X):</p>
-            </div>
-            <p style = "font-size: 12px;"> 마케팅 동의 시: <br>
-                상품 가격의 5,000원을 할인받으실 수 있어요!
-                <br> 사진이 다키스냅 인스타그램 채널 등에 업로드될 수 있습니다.</p>
-        </section>
-        
-        
-        
-        <section class="section" id="profile">
-           <h2>DakySnap by Dakyeom Ahn</h2>
-                <!-- <img src="your-photo.jpg" alt="Dakyeom Ahn" class="profile-img"> -->
-                <!-- <div class="profile-section">
+			<section class="section" id="pricing">
+				<h2>가격 안내</h2>
+				<div class="box">
+					<p>
+						<strong>[개인스냅]<br />오로지 당신에게 집중하는 시간</strong>
+					</p>
+					<p>촬영 시간: 1시간</p>
+					<p>셀렉하신 원본 모두 제공</p>
+					<p>보정본 12장 제공</p>
+					<p style="color: green">가격: 45,000원 [55% 할인 중]</p>
+					<p>프로필사진, 졸업스냅 등을 원하실 때 추천드려요.</p>
+				</div>
+				<div class="box">
+					<p>
+						<strong>[2인 스냅]<br />연인, 친구, 부모님과 함께</strong>
+					</p>
+					<p>촬영 시간: 1시간</p>
+					<p>셀렉하신 원본 모두 제공</p>
+					<p>보정본 15장 제공</p>
+					<p style="color: green">가격: 65,000원 [55% 할인 중]</p>
+					<p>소중한 사람과 추억을 남기고 싶으실 때 추천드려요.</p>
+				</div>
+
+				<div class="box">
+					<h2>추가 상품 안내</h2>
+					<p>
+						3인 이상 촬영부터 인원추가비용이 발생합니다: <br />
+						1인 추가 시 + 20,000원
+					</p>
+					<p>보정본 추가 장당: +5,000원</p>
+					<p>3일 이내 선보정 요청: +10,000원</p>
+					<p>시간 추가 시 30분 단위: +25,000원</p>
+				</div>
+			</section>
+
+			<section class="section" id="reservation">
+				<h2>예약 안내</h2>
+				<p style="font-size: 14px">
+					아래 양식을 작성하셔서,
+					<a href="https://www.instagram.com/daky_snap/" target="_blank">인스타그램(@daky_snap)</a>
+					DM 또는 <a href="https://pf.kakao.com/_ymGnn" target="_blank">카카오톡 채널</a>로 메시지를
+					보내주세요! <br />예약 전
+					<a
+						href="https://dakyeomahn.notion.site/1b2db2103b2a809284b8d6f51ed7a815?v=1b2db2103b2a8062991a000c695a0f6b"
+						target="_blank"
+						>다키스냅 스케줄</a
+					>을 확인해주시면 감사하겠습니다.
+				</p>
+				<div class="copy-container">
+					<button class="copy-button" onclick="copyReservationForm()">복사하기</button>
+					<p><strong>[예약 양식]</strong></p>
+					<p id="reservation-text">
+						성함:
+
+						<br />연락처:
+
+						<br />희망 날짜 및 시간(가능하신 옵션 여러개):
+
+						<br />촬영 인원:
+
+						<br />마케팅 동의 여부 (O,X):
+					</p>
+				</div>
+				<p style="font-size: 12px">
+					마케팅 동의 시: <br />
+					상품 가격의 5,000원을 할인받으실 수 있어요!
+					<br />
+					사진이 다키스냅 인스타그램 채널 등에 업로드될 수 있습니다.
+				</p>
+			</section>
+
+			<section class="section" id="profile">
+				<h2>DakySnap by Dakyeom Ahn</h2>
+				<!-- <img src="your-photo.jpg" alt="Dakyeom Ahn" class="profile-img"> -->
+				<!-- <div class="profile-section">
                     <div class="profile-text"> -->
-                    <!-- <p><strong></strong></p> -->
-                <p style = "font-size: 14px;">다키는 서울대학교 학사과정에 재학중인 안다겸입니다.<br>
-                    인간-컴퓨터 상호작용을 연구하고 있습니다 <br>
-                    인물과 순간을 담는 것에 삶의 중요한 의미를 두고 있습니다.<br>
-               
-                <strong>For more: <a href="https://dakyeomahn.info" target="_blank">dakyeomahn.info</a></strong></p>
-                <!-- </div> -->
-            <!-- </div> -->
-        </section>
-    </div>
-    <script>
-        // function toggleContent(id, element) {
-        //     var content = document.getElementById(id);
-        //     var isOpen = content.classList.contains("open");
+				<!-- <p><strong></strong></p> -->
+				<p style="font-size: 14px">
+					다키는 서울대학교 학사과정에 재학중인 안다겸입니다.<br />
+					인간-컴퓨터 상호작용을 연구하고 있습니다 <br />
+					인물과 순간을 담는 것에 삶의 중요한 의미를 두고 있습니다.<br />
 
-        //     if (!isOpen) {
-        //         content.classList.add("open");
-        //         element.querySelector("span").textContent = "▼";
-        //     } else {
-        //         content.classList.remove("open");
-        //         element.querySelector("span").textContent = "▶";
-        //     }
-        // }
-        function copyReservationForm() {
-            var text = document.getElementById("reservation-text").innerText;
-            navigator.clipboard.writeText(text).then(() => {
-                alert("예약 양식이 복사되었습니다!");
-            }).catch(err => {
-                console.error("복사 실패: ", err);
-            });
-        }
+					<strong
+						>For more: <a href="https://dakyeomahn.info" target="_blank">dakyeomahn.info</a></strong
+					>
+				</p>
+				<!-- </div> -->
+				<!-- </div> -->
+			</section>
+		</div>
+		<script>
+			// function toggleContent(id, element) {
+			//     var content = document.getElementById(id);
+			//     var isOpen = content.classList.contains("open");
 
-        function toggleLanguage() {
-            const currentPage = window.location.pathname;
-            if (currentPage.includes("index.html")) {
-                window.location.href = "eng.html"; // 한국어 → 영어 페이지 이동
-            } else {
-                window.location.href = "index.html"; // 영어 → 한국어 페이지 이동
-            }
-        }
-    </script>
-</body>
+			//     if (!isOpen) {
+			//         content.classList.add("open");
+			//         element.querySelector("span").textContent = "▼";
+			//     } else {
+			//         content.classList.remove("open");
+			//         element.querySelector("span").textContent = "▶";
+			//     }
+			// }
+			function copyReservationForm() {
+				var text = document.getElementById('reservation-text').innerText;
+				navigator.clipboard
+					.writeText(text)
+					.then(() => {
+						alert('예약 양식이 복사되었습니다!');
+					})
+					.catch((err) => {
+						console.error('복사 실패: ', err);
+					});
+			}
+
+			function toggleLanguage() {
+				const currentPage = window.location.pathname;
+				if (currentPage.includes('index.html')) {
+					window.location.href = 'eng.html'; // 한국어 → 영어 페이지 이동
+				} else {
+					window.location.href = 'index.html'; // 영어 → 한국어 페이지 이동
+				}
+			}
+		</script>
+	</body>
 </html>
