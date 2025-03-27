@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
 	<head>
-		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-NQKKBVF793"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
@@ -9,46 +8,47 @@
 				dataLayer.push(arguments);
 			}
 			gtag('js', new Date());
-
 			gtag('config', 'G-NQKKBVF793');
 		</script>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta content="width=device-width,initial-scale=1" name="viewport" />
 		<title>다키스냅</title>
 		<link
-			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/pretendard/dist/web/variable/pretendardvariable.css"
+			rel="stylesheet"
 		/>
 		<style>
+			html,
 			body {
+				height: 100%;
+				width: 100%;
+			}
+			body {
+				overflow-x: hidden;
+				overflow-y: auto;
 				font-family: 'Pretendard Variable', sans-serif;
 				margin: 0;
 				padding: 0;
-				background-color: #ffffff;
+				background-color: #fff;
 				color: #333;
-				overflow-x: hidden;
 				text-align: left;
 			}
 			.container {
-				width: 100vw;
+				width: 100%;
+				max-width: 44rem;
+				margin: 0 auto;
 				display: flex;
 				flex-direction: column;
-				/* scroll-snap-type: y mandatory; */
 				overflow-y: scroll;
 				text-align: left;
-				/* height: 100vh; */
 			}
 			.container {
 				width: 100vw;
 				display: flex;
 				flex-direction: column;
-				/* scroll-snap-type: y mandatory; */
-				/* overflow-y: auto; */
 				overflow-y: scroll;
 				overflow-x: hidden;
 				scroll-behavior: smooth;
-
-				/* scroll-behavior: auto; */
 				text-align: left;
 			}
 			.section {
@@ -64,20 +64,8 @@
 				overflow-x: hidden;
 				overflow-y: scroll;
 				box-sizing: border-box;
-				/* overflow-y: auto; */
-				/* scroll-behavior: auto; */
 			}
-			/* .header-section {
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background: url('your-header-image-url.jpg') no-repeat center center/cover;
-        } */
 			.header-title {
-				/* background: rgba(0, 0, 0, 0.5); */
 				padding: 10px;
 				border-radius: 4px;
 				color: white;
@@ -88,7 +76,6 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				/* background-color: #f8f8f8; */
 				padding: 10px;
 				border-radius: 4px;
 				width: 10%;
@@ -115,21 +102,16 @@
 				font-size: 14px;
 			}
 			.header-section {
-				width: 100vw;
-				height: 100vh;
+				width: 100%;
+				max-width: 968px;
+				height: 82.5%;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
 				justify-content: center;
-				background: url('your-header-image-url.jpg') no-repeat center center/cover;
-				padding: 0; /* 패딩 제거 */
-				margin: 0; /* 마진 제거 */
-			}
-			.header-image {
-				width: 100vw; /* 뷰포트 전체 너비 */
-				height: 100vh; /* 뷰포트 전체 높이 */
-				object-fit: cover; /* 이미지가 꽉 차도록 조정 */
-				display: block; /* 이미지 상단 공백 방지 */
+				background: url('header.avif') no-repeat center center/cover;
+				padding: 0;
+				margin: 0 auto;
 			}
 			h2 {
 				text-align: left;
@@ -146,32 +128,10 @@
 				scroll-behavior: smooth;
 			}
 			.image-scroll-container img {
-				height: 250px; /* 이미지 크기 조정 (이전보다 작게) */
+				height: 250px;
 				border-radius: 4px;
 				object-fit: cover;
 			}
-			/* .toggle-container {
-            margin-top: 10px;
-            
-        }
-        .toggle-title {
-            font-weight: bold;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-        }
-        .toggle-title span {
-            margin-right: 8px;
-            transition: transform 0.3s ease;
-        }
-        .toggle-content {
-            display: none;
-            margin-top: 5px;
-            font-size: 14px;
-        }
-        .open .toggle-title span {
-            transform: rotate(90deg);
-        } */
 			.copy-container {
 				background: #ffffff;
 				padding: 15px;
@@ -204,7 +164,7 @@
 				background: #45a049;
 			}
 			p {
-				line-height: 1.8; /* 문단 줄 간격 증가 */
+				line-height: 1.8;
 			}
 			a {
 				font-weight: bold;
@@ -224,22 +184,14 @@
 				cursor: pointer;
 				font-size: 14px;
 			}
-			/* .lang-toggle:hover {
-            background: #555;
-        } */
 		</style>
 	</head>
 	<body>
-		<button class="lang-toggle" onclick="toggleLanguage()">EN</button>
-
+		<section class="section header-section" id="home"></section>
 		<div class="container">
-			<section class="section header-section" id="home">
-				<img src="header-image_optimized.jpeg" alt="Header Image" class="header-image" />
-			</section>
-
 			<section class="section" id="about" style="font-size: 14px">
-				<h2 style="font-size: 24px">다키스냅 @daky_snap</h2>
-				<h2>부담 없이, 자연스럽게, 그리고 나답게</h2>
+				<h2 style="font-size: 24px">다키스냅 @daky.pics</h2>
+				<h2 style="margin-top: 0">부담 없이, 자연스럽게, 그리고 나답게</h2>
 				<p>
 					다키스냅은 단순히 ‘예쁜 사진’보다 <br /><b>‘내가 나를 더 좋아할 수 있는 사진’</b> 을
 					중요하게 생각합니다.<br />
@@ -247,25 +199,15 @@
 					담긴다고 믿어요.<br />
 					<br />촬영 전부터 결과물을 받는 순간까지 <br />부담 없이 즐길 수 있도록 도와드립니다.
 				</p>
-
 				<p>
 					다키스냅이 찍은 사진이 궁금하신가요? <br />
 					<strong
-						><a href="https://www.instagram.com/daky_snap/" target="_blank"
-							>인스타그램 채널(@daky_snap) 바로가기</a
+						><a href="https://www.instagram.com/daky.pics/" target="_blank"
+							>인스타그램 채널(@daky.pics) 바로가기</a
 						></strong
 					>
 				</p>
-
-				<!-- <div class="image-scroll-container">
-                <img src="photo1.jpg" alt="Sample Photo 1">
-                <img src="photo2.jpg" alt="Sample Photo 2">
-                <img src="photo3.jpg" alt="Sample Photo 3">
-                <img src="photo4.jpg" alt="Sample Photo 4">
-                <img src="photo5.jpg" alt="Sample Photo 5">
-            </div> -->
 			</section>
-
 			<section class="section" id="shooting-info">
 				<h2>촬영 안내</h2>
 				<div class="box">
@@ -285,7 +227,6 @@
 						이는 촬영을 시작하기 전, 간략히 설명해 드립니다.
 					</p>
 				</div>
-
 				<div class="box">
 					<p><strong>촬영 중: 작가와 있는 그대로의 나를 믿을 수 있도록</strong></p>
 					<p>
@@ -314,7 +255,6 @@
 					</p>
 				</div>
 			</section>
-
 			<section class="section" id="pricing">
 				<h2>가격 안내</h2>
 				<div class="box">
@@ -337,7 +277,6 @@
 					<p style="color: green">가격: 65,000원 [55% 할인 중]</p>
 					<p>소중한 사람과 추억을 남기고 싶으실 때 추천드려요.</p>
 				</div>
-
 				<div class="box">
 					<h2>추가 상품 안내</h2>
 					<p>
@@ -349,12 +288,11 @@
 					<p>시간 추가 시 30분 단위: +25,000원</p>
 				</div>
 			</section>
-
 			<section class="section" id="reservation">
 				<h2>예약 안내</h2>
 				<p style="font-size: 14px">
 					아래 양식을 작성하셔서,
-					<a href="https://www.instagram.com/daky_snap/" target="_blank">인스타그램(@daky_snap)</a>
+					<a href="https://www.instagram.com/daky.pics/" target="_blank">인스타그램(@daky.pics)</a>
 					DM 또는 <a href="https://pf.kakao.com/_ymGnn" target="_blank">카카오톡 채널</a>로 메시지를
 					보내주세요! <br />예약 전
 					<a
@@ -367,14 +305,7 @@
 					<button class="copy-button" onclick="copyReservationForm()">복사하기</button>
 					<p><strong>[예약 양식]</strong></p>
 					<p id="reservation-text">
-						성함:
-
-						<br />연락처:
-
-						<br />희망 날짜 및 시간(가능하신 옵션 여러개):
-
-						<br />촬영 인원:
-
+						성함: <br />연락처: <br />희망 날짜 및 시간(가능하신 옵션 여러개): <br />촬영 인원:
 						<br />마케팅 동의 여부 (O,X):
 					</p>
 				</div>
@@ -385,39 +316,19 @@
 					사진이 다키스냅 인스타그램 채널 등에 업로드될 수 있습니다.
 				</p>
 			</section>
-
 			<section class="section" id="profile">
 				<h2>DakySnap by Dakyeom Ahn</h2>
-				<!-- <img src="your-photo.jpg" alt="Dakyeom Ahn" class="profile-img"> -->
-				<!-- <div class="profile-section">
-                    <div class="profile-text"> -->
-				<!-- <p><strong></strong></p> -->
 				<p style="font-size: 14px">
 					다키는 서울대학교 학사과정에 재학중인 안다겸입니다.<br />
 					인간-컴퓨터 상호작용을 연구하고 있습니다 <br />
 					인물과 순간을 담는 것에 삶의 중요한 의미를 두고 있습니다.<br />
-
 					<strong
 						>For more: <a href="https://dakyeomahn.info" target="_blank">dakyeomahn.info</a></strong
 					>
 				</p>
-				<!-- </div> -->
-				<!-- </div> -->
 			</section>
 		</div>
 		<script>
-			// function toggleContent(id, element) {
-			//     var content = document.getElementById(id);
-			//     var isOpen = content.classList.contains("open");
-
-			//     if (!isOpen) {
-			//         content.classList.add("open");
-			//         element.querySelector("span").textContent = "▼";
-			//     } else {
-			//         content.classList.remove("open");
-			//         element.querySelector("span").textContent = "▶";
-			//     }
-			// }
 			function copyReservationForm() {
 				var text = document.getElementById('reservation-text').innerText;
 				navigator.clipboard
@@ -428,15 +339,6 @@
 					.catch((err) => {
 						console.error('복사 실패: ', err);
 					});
-			}
-
-			function toggleLanguage() {
-				const currentPage = window.location.pathname;
-				if (currentPage.includes('index.html')) {
-					window.location.href = 'eng.html'; // 한국어 → 영어 페이지 이동
-				} else {
-					window.location.href = 'index.html'; // 영어 → 한국어 페이지 이동
-				}
 			}
 		</script>
 	</body>
